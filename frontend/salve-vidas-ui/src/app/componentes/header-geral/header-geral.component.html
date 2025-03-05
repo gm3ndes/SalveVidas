@@ -1,0 +1,21 @@
+<header style="text-align: center;">
+    <h1>Salve Vidas!</h1>
+    <nav style="display: flex; justify-content: space-between;">
+        <ul class="opcoes-menu" style="width: 100%;">
+            <li (click)="navegarParaPagina('sobre-nos')">Sobre nós</li>
+            <li (click)="navegarParaPagina('usuarios')">Usuários</li>
+            <li (click)="navegarParaPagina('doacoes')">Doações</li>
+            <li (click)="navegarParaPagina('campanhas')">Campanhas</li>
+            <li (click)="navegarParaPagina('instituicoes')">Instituições</li>
+        </ul>
+        <ul *ngIf="estaLogado()" class="opcoes-menu">
+            <li>{{dadosLogado.nome}} | {{dadosLogado.nome_instituicao}}</li>
+            <li (click)="deslogar()">Deslogar</li>
+        </ul>
+        <ul *ngIf="!estaLogado()" class="opcoes-menu">
+            <li style="padding-right: 8px;" (click)="navegarParaPagina('login')">Login</li>
+            <li (click)="navegarParaPagina('cadastro')">Cadastro</li>
+        </ul>
+    </nav>
+    <hr>
+</header>

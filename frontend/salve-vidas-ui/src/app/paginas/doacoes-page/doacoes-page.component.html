@@ -1,0 +1,21 @@
+<app-header-geral/>
+
+<h1>Doações</h1>
+<div>
+    <table>
+        <tr>
+            <th>Doador</th>
+            <th>Instituição</th>
+            <th>Quantidade</th>
+            <th>Data efetuada</th>
+        </tr>
+        <tbody>
+            <tr *ngFor="let doacao of dadosDoacoesDetalhadas">
+                <td>{{doacao.nome_usuario}} {{doacao.sobrenome_usuario}}</td>
+                <td>{{doacao.nome_instituicao}}</td>
+                <td>{{doacao.quantidade}}</td>
+                <td>{{doacao.data_doacao | date: 'dd/MM/yyyy'}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

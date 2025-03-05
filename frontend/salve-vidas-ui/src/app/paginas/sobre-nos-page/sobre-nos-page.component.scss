@@ -1,0 +1,32 @@
+.sobre-nos {
+    background-color: rgb(92, 44, 44);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.sobre-nos h1 {
+    color: pink;
+}
+
+.equipe {
+    margin-top: 2em;
+}
+
+.membros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.membro {
+    margin: 1em;
+    text-align: center;
+}
+
+.membro img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}

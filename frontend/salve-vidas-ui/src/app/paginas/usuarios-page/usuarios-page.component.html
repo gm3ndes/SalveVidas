@@ -1,0 +1,20 @@
+<app-header-geral/>
+<h1>Usuários</h1>
+<div>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Endereco</th>
+            <th>Tipo Sangue</th>
+        </tr>
+        <tbody>
+            <tr *ngFor="let usuario of dadosUsuarios">
+                <td>{{ usuario.nome }} {{usuario.sobrenome}}</td>
+                <td>{{ usuario.email }}</td>
+                <td>{{ usuario.endereco }}</td>
+                <td>{{ usuario.tipo_sanguinio }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

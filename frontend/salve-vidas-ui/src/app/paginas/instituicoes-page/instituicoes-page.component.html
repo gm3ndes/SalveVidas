@@ -1,0 +1,18 @@
+<app-header-geral/>
+<h1>Instituições</h1>
+<div>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Endereco</th>
+            <th>Telefone</th>
+        </tr>
+        <tbody>
+            <tr *ngFor="let instituicao of dadosInstituicoes">
+                <td>{{ instituicao.nome }}</td>
+                <td>{{ instituicao.endereco }}</td>
+                <td>{{ instituicao.telefone }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

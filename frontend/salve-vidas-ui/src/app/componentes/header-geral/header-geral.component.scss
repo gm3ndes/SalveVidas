@@ -1,0 +1,16 @@
+.opcoes-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    padding: 16px;
+}
+
+.opcoes-menu li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
