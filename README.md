@@ -7,7 +7,9 @@
 - Os dados para conexão do banco estão definidos no arquivo “enviroment.ts“;
 - Com esses dados, o server.ts inicia a conexão com o banco de dados e as APIs que o frontend vai consumir.
 
-## Banco de dados em Postgres
+## Banco de dados em Postgres, com o conteinêr feito no Docker
+
+## DBeaver utilizado para modificar o banco de dados
 
 As informações utilizadas no docker para utilização do PostGres, caso queira reutilizar.
 
